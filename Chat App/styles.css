@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*index.html and login.html styling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(169, 211, 245) !important;
+}
+
+.wrapper{
+    padding: 10px 25px 10px 25px ;
+    background: white;
+    border-radius: 20px;
+    min-width: 40%;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.head{
+    background:linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    outline: none;
+    font-size: 55px;
+    text-align: center;
+}
+
+.error-txt{
+    word-wrap: break-word;
+    text-align: center;
+    color:#721c24;
+    background: #f7d8da;
+    border: 0px solid #f5c6cb;
+}
+
+.name-details{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.name-details :first-child{
+    padding-right: 10px;
+    min-width: 275px;
+}
+.name-details :last-child{
+    padding-left: 10px;
+    min-width: 275px;
+}
+
+form .field{
+    position: relative;
+}
+
+
+.moto{
+    text-align: end;
+    padding-right: 15%;
+    background: rgb(211, 244, 250);
+    border-bottom: 1px solid #e6e6e6;
+    
+}
+
+input{
+    max-width: 100%;
+    
+}
+
+.inside-input{
+    padding-left: 10px;
+}
+
+.submit-btn {
+    border-radius:20px !important;
+ }
+
+.link{
+    text-align: center;
+    font-size: 15px;
+}
+.link a{
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration: underline;
+    transition: ease-in-out;
+}
+
+form .field i {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    color: #ccc;
+    transform: translateY(120%);
+    cursor: pointer; 
+}
+
+/*users.html styling*/
+
+.users{
+    padding: 20px 10px 5px 5px !important;
+}
+
+.users header, .users-list a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.users-list h6{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.users header .content, 
+.users-list a .content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.users header .content img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.users header .content .details span,
+.users-list .content .details span{
+    font-weight: bold;
+}
+
+.status {
+    position: relative;
+    display: flex;
+}
+
+.circle{
+    color: forestgreen;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transform: translateY(50%);
+}
+
+.users header .logout {
+    text-decoration: none;
+    background: #333;
+    color: seashell;
+    padding: 7px 15px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.users .search {
+    margin-top: 20px;
+}
+
+.users .search-bar {
+    display: flex;
+    margin-top: 5px;
+}
+
+.users .search-bar button {
+    outline: none;
+}
+
+.users-list a{
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.users-list a .content img{
+    margin-top: 5px;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.users-list .content .details{
+    color: black;
+    text-decoration: none;
+}
+
+.wrap {
+    margin: 10px;
+}
+
+.users-list a:last-child{
+    border: none;
+    border-bottom: 0px;
+}
+
+.users-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.users-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.users-list::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+.users-list::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+}
+
+.users-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+.users-list::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+}
+
+
+.users-list a .content p {
+    color: #67676a;
+}
+
+.users-list a .status-dot {
+    color: forestgreen;
+    margin-right: 30px;
+}
+
+/*We'll use this class in php to show offline status*/
+.users-list a .status-dot.offline {
+    color: rgb(247, 107, 107);
+}
+
+/*chat area css code*/
+.chat-area header {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.chat-area header img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    margin-right: 20px;
+}
+
+.chat-area header .back-arrow {
+    color: rgb(90, 150, 218);
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+
+.chat-area header .details span {
+    font-weight: bold;
+}
+
+.chat-box{
+    min-height: 500px;
+    min-width: 600px;
+    max-height: 500px;
+    max-width: 600px;
+    overflow-y: auto;
+    background: #f7f7f7;
+    padding:10px 20px 20px 10px;
+}
+
+.chat-box::-webkit-scrollbar{
+    width: 0px;
+}
+
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+}
+
+.chat-box .outgoing, .chat-box .incoming {
+    display: flex;
+}
+
+.chat-box .outgoing .details p{
+    background: rgb(95, 127, 216);
+    color: #fff;
+    border-radius: 18px 18px 0px 18px;
+    margin: 0px;
+}
+.chat-box .incoming .details p{
+    background: rgb(66, 70, 82);
+    color: #fff;
+    border-radius: 0px 18px 18px 18px;
+    margin: 0px;
+}
+
+.chat-box .outgoing .details {
+    max-width: calc(100% - 130px);
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+.chat-box .incoming .details {
+    max-width: calc(100% - 130px);
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.chat-box .incoming img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5); 
+}
+
+.typing-area input {
+    border: 1px solid;
+    outline: none;
+    border-radius: 15px;
+    height: 40px;
+    width: calc(100% - 40px);
+    padding-left: 10px;
+}
+.typing-area button {
+    outline: none;
+    border: none;
+    background: #3c63cc;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    margin-left: 10px;
+}
+.typing-area button i {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
